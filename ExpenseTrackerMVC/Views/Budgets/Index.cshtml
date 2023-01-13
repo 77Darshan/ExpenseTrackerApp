@@ -1,0 +1,26 @@
+﻿@model ExpenseTrackerMVC.Models.Budget
+@{
+    //ViewBag.Title = "";
+    Layout = "~/Views/Shared/Budget_Layout.cshtml";
+}
+
+<center><h1>Welcome to Expense Tracker</h1></center>
+
+<div class="form-body">
+
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.budgetid)
+        @Html.HiddenFor(model => model.TotalExpense)
+        <div class="form-group">
+            <label for="budget">Please Enter your Budget</label>
+            @Html.EditorFor(model => model.TotalLimit)
+            @Html.ValidationMessageFor(model => model.TotalLimit)
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit" class="btn button" />
+        </div>
+    }
+
+</div>

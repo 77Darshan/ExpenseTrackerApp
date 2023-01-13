@@ -1,0 +1,49 @@
+﻿@model ExpenseTrackerMVC.Models.Category
+@{
+    ViewBag.Title = "Add Category";
+}
+
+<link href="~/Content/mycss.css" rel="stylesheet" />
+
+<div class="form-body">
+<h2 style="color:white;">Add Or Edit Category</h2>
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.categoryId)
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="form-group">
+            <label for="limit">Limit</label>
+            @Html.EditorFor(model => model.limit)
+            @Html.ValidationMessageFor(model => model.limit)
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit" class="btn button" />
+            <input type="reset" value="Reset" class="btn button" />
+        </div>
+    }
+
+</div>
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval");
+
+    <script>
+            $(function () {
+                var message = '@TempData["successMessage"]'
+                if (message != '')
+                    alertify.success(message);
+
+                var failure = '@TempData["failureMessage"]'
+                if (failure != '')
+                    alertify.error(failure);
+
+            });
+    </script>
+}
