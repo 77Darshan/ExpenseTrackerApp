@@ -36,3 +36,7 @@ This project is licensed under the MIT License. See LICENSE for more information
 
 Contact
 For any queries, please contact 77Darshan
+
+Screenshots
+![image](https://user-images.githubusercontent.com/76769885/212375379-482e2711-bfff-4b0e-b1b2-02bfd0326abe.png)
+Above screenshot is of Dashboard which display information.
