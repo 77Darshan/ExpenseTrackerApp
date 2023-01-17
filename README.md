@@ -23,11 +23,12 @@ Open the solution file in Visual Studio 2022
 Build the solution
 Run the application
 
-Usage
-Register an account or login with an existing account
+Usage 
+
 Add expenses by clicking the "New Expense" button
 View and manage expenses by clicking the "Expenses" button
 View and manage categories by clicking the "Category" button
+Alter budget by clicking on "manage budget" button
 Contributions
 We welcome contributions to this project. If you would like to contribute, please fork the repository and make your changes. Once you are ready, please create a pull request for review.
 
