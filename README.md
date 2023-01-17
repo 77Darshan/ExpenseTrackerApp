@@ -1,6 +1,6 @@
 Expense Tracker
 
-Expense Tracker is a web application built using Web API with ASP.Net MVC and Entity Framework. It allows user to track and manage their expenses accorfing to the categories selected. It also allow user to alter the Budget.
+Expense Tracker is a web application built using Web API with ASP.Net MVC and Entity Framework. It allows user to track and manage their expenses according to the categories selected. It also allow user to alter the Budget.
 
 Technologies Used
 
